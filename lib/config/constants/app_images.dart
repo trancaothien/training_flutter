@@ -2,10 +2,7 @@ class AppImages {
   AppImages._();
 
   // logo
-  static const imgLogoCircle = 'assets/images/img_logo.png';
-
-  // background
-  static const imgBackground = 'assets/images/img_bg.png';
-
-  static const uploadAnimation = 'assets/animations/upload.gif';
+  static const imgLogo = 'assets/images/logo.png';
+  static const imgBg = 'assets/images/bg.png';
+  static const imgBgLogin = 'assets/images/bg_login.png';
 }

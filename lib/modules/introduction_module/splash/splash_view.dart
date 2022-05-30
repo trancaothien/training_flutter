@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:training_flutter/config/constants/app_styles.dart';
 
+import '../../../config/config.dart';
 import 'splash_controller.dart';
 
 class SplashView extends GetView<SplashController> {
@@ -9,13 +9,9 @@ class SplashView extends GetView<SplashController> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          'Splash screen',
-          style: styleLargeBold,
-        ),
-      ),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(child: Image.asset(AppImages.imgLogo)),
     );
   }
 }
