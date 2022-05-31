@@ -2,8 +2,19 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'article_model.g.dart';
 
+const String articleTable = 'article';
+const String sourceColumn = 'source';
+const String authorColumn = 'author';
+const String titleColumn = 'title';
+const String descriptionColumn = 'description';
+const String urlColumn = 'url';
+const String urlToImageColumn = 'urlToImage';
+const String publishedAtColumn = 'publishedAt';
+const String contentColumn = 'content';
+
 @JsonSerializable()
 class ArticleModel {
+  int? id;
   SourceModel? source;
   String? author;
   String? title;
@@ -13,6 +24,7 @@ class ArticleModel {
   String? publishedAt;
   String? content;
   ArticleModel({
+    this.id,
     this.source,
     this.author,
     this.title,
